@@ -10,8 +10,10 @@
 | 91   | Decode Ways                                          | C++      | Medium     |
 | 160  | Intersection of Two Linked Lists                     | C++      | Easy       |
 | 268  | Missing Number                                       | C++      | Easy       |
+| 283  | Move Zeroes                                          | C++      | Easy       |
 | 556  | Next Greater Element III                             | C++      | Medium     |
 | 645  | Set Mismatch                                         | C++      | Easy       |
 | 714  | Best Time to Buy and Sell Stock with Transaction Fee | C++      | Medium     |
 | 841  | Keys and Rooms                                       | C++      | Medium     |
+| 923  | 3Sum With Multiplicity                               | C++      | Medium     |
 | 1396 | Design Underground System                            | C++      | Medium     |
