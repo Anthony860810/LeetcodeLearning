@@ -5,14 +5,18 @@
 | #    | Title                                                | Solution | Difficulty |
 | ---- | ---------------------------------------------------- | -------- | ---------- |
 | 1    | TwoSum                                               | C++      | Easy       |
+| 9    | Palindrome Number                                    | C        | Easy       |
 | 19   | Remove Nth Node From End of List                     | C++      | Medium     |
 | 39   | Combination Sum                                      | C++      | Medium     |
 | 46   | Permutation                                          | C++      | Medium     |
 | 53   | Maximum Subarray                                     | C        | Easy       |
 | 91   | Decode Ways                                          | C++      | Medium     |
+| 100  | Same Tree                                            | C        | Easy       |
+| 136  | Single Number                                        | C        | Easy       |
 | 160  | Intersection of Two Linked Lists                     | C++      | Easy       |
 | 190  | Reverse Bits                                         | C++      | Easy       |
 | 191  | Number of 1 Bits                                     | C        | Easy       |
+| 234  | Palindrome Linked List                               | C        | Easy       |
 | 268  | Missing Number                                       | C++      | Easy       |
 | 283  | Move Zeroes                                          | C++      | Easy       |
 | 556  | Next Greater Element III                             | C++      | Medium     |
