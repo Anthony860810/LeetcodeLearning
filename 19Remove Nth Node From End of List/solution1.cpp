@@ -11,7 +11,6 @@
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
-        map<int, int> dic;
         ListNode *cur=head;
         ListNode *past=cur;
         int len=0;
