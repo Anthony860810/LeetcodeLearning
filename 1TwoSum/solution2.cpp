@@ -5,7 +5,6 @@ public:
         vector<int> ans;
         for(int idx=0; idx<nums.size(); idx++){
             int complement = target-nums[idx];
-            //cout<<nums[idx]<<" ";
             if (Map.count(complement)==0){
                 Map.insert(pair<int,int>(nums[idx],idx));
             }
