@@ -1,4 +1,23 @@
-# 91 Decode Ways
+# 91.Decode Ways
+
+A message containing letters from A-Z can be encoded into numbers using the following mapping:
+```
+'A' -> "1"
+'B' -> "2"
+...
+'Z' -> "26"
+```
+To decode an encoded message, all the digits must be grouped then mapped back into letters using the reverse of the mapping above (there may be multiple ways). For example, "11106" can be mapped into:
+
+* "AAJF" with the grouping (1 1 10 6)
+* "KJF" with the grouping (11 10 6)
+Note that the grouping (1 11 06) is invalid because "06" cannot be mapped into 'F' since "6" is different from "06".
+
+Given a string s containing only digits, return the number of ways to decode it.
+
+The answer is guaranteed to fit in a 32-bit integer.
+
+
 
 ## 解題思路:
 這一題一開始會想到這是一個 **Recursive** 的題目，原因在於你不只需要考慮當前位置的數字是否為合法，同時也需要去觀測前一個數字與他的組合是否合法，因此我們需要不停地往前解構字串列，這就是 **Recursive** 的核心思想。然而面對數列的增長，我們需要用空間換取時間，因此我們需要一個容器來儲存過往數字所組成的字串所能構成幾種不同型態的英文字串，也因此這可以被轉換成一個 **Dynamic programming** 的問題
