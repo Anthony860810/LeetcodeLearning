@@ -1,18 +1,17 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int, int> Map;
-        vector<int> ans;
-        for(int idx=0; idx<nums.size(); idx++){
-            int complement = target-nums[idx];
-            if (Map.count(complement)==0){
-                Map.insert(pair<int,int>(nums[idx],idx));
+        unordered_map<int, int> hash_table;
+
+        for (int i=0; i<nums.size(); i++) {
+            if (!hash_table.count(target - nums[i])) {
+                hash_table.insert(make_pair(nums[i], i));
+            } else {
+                return {hash_table[target - nums[i]],i};
             }
-            else{
-                ans.push_back(Map[complement]);
-                ans.push_back(idx);
-            }
+
         }
-        return ans;
+
+        return {};
     }
 };
