@@ -1,21 +1,30 @@
 class Solution {
-    public:
-        bool isValid(string s) {
-            stack<char> mystack;
-    
-            for (int i = 0; i < s.size(); i++) {
-    
-                if (s[i] == '(' || s[i] == '[' || s[i] == '{') {
-                    mystack.push(s[i]);
-                } else if (s[i] == ')' && mystack.top() == '(') {
-                    mystack.pop();
-                } else if (s[i] == ']' && mystack.top() == '[') {
-                    mystack.pop();
-                } else if (s[i] == '}' && mystack.top() == '{') {
-                    mystack.pop();
+public:
+    bool isValid(string s) {
+        stack<char> container;
+
+        for (int idx = 0; idx < s.size(); idx++) {
+            if (s[idx] == '(' ||
+                s[idx] == '[' ||
+                s[idx] == '{') {
+                container.push(s[idx]);
+            } else if (s[idx] == ')' ||
+                       s[idx] == ']' ||
+                       s[idx] == '}') {
+                if (container.empty()) {
+                    return false;
+                }
+
+                if ((s[idx] == ')' && container.top() == '(') ||
+                    (s[idx] == ']' && container.top() == '[') ||
+                    (s[idx] == '}' && container.top() == '{')) {
+                    container.pop();
+                } else {
+                    return false;
                 }
             }
-      
-            return mystack.empty();
         }
-    };
+
+        return container.empty();
+    }
+};
